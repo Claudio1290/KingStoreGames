@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrarse</title>
+    <style>
+        /* Estilos para la apariencia del formulario */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #983b3b;
+            color: #fff;
+            cursor: pointer;
+        }
+        .login {
+            text-align: center;
+        }
+        .login a {
+            color: #983b3b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrarse</h1>
+        <form action="re.php" method="post"> <!-- Archivo PHP para procesar el registro -->
+            <input type="text" name="nombre" placeholder="Nombre completo">
+            <input type="text" name="usuario" placeholder="Nombre de usuario">
+            <input type="password" name="contraseña" placeholder="Contraseña">
+            <input type="submit" value="Registrarse">
+        </form>
+        <div class="login">
+            <a href="login.html">Iniciar sesión</a> <!-- Enlace para iniciar sesión -->
+        </div>
+    </div>
+</body>
+</html>

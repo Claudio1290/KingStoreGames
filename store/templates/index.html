@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda de Productos de Informática</title>
+    <style>
+        /* Estilos generales para la apariencia de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .welcome {
+            text-align: right;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .category {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            margin-top: 10px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+        .search input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+    <style>
+        .categories {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     }
+  
+     .categories li {
+     display: inline-block;
+     position: relative;
+     padding: 10px;
+     background-color: #ddd;
+     }
+  
+     .categories li:hover .submenu {
+      display: block;
+     }
+  
+     .submenu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     background-color: #fff;
+     }
+  
+     .submenu li {
+     display: block;
+     padding: 10px;
+     border-bottom: 1px solid #ccc;
+     }
+  
+     .submenu li:last-child {
+     border-bottom: none;
+     }
+
+
+     </style>
+
+<body>
+    
+    
+    <div class="container">
+        <h1>Tienda de Productos de Informática</h1>
+        <div class="welcome">
+            <p>Bienvenido Usuario</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Buscar productos">
+        </div>
+        <ul class="categories">
+            <li>Perifericos
+              <ul class="submenu">
+                <li>Mouse</li>
+                <li>Teclado</li>
+                <li>Auriculares</li>
+              </ul>
+            </li>
+            <li>Componentes PC
+                <ul class="submenu">
+                  <li>Procesadores</li>
+                  <li>Placas de video</li>
+                  <li>Placas madre</li>
+                </ul>
+              </li>
+            <li>Electrodomesticos 
+                <ul class="submenu">
+                 <li>Lavarropa</li>
+                 <li>Heladera</li>
+                 <li>Microondas</li>
+                </ul>
+            </li>
+          </ul>
+          
+        <div class="products">
+            <div class="product">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción del producto 1</p>
+                <p>Precio: $100</p>
+            </div>
+            <div class="product">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción del producto 2</p>
+                <p>Precio: $200</p>
+            </div>
+            <div class="product">
+                <img src="producto3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Descripción del producto 3</p>
+                <p>Precio: $300</p>
+            </div>
+            <!-- Agrega más productos según tus necesidades -->
+        </div>
+    </div>
+</body>
+</html>
