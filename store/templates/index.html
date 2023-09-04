@@ -35,7 +35,7 @@
             grid-gap: 20px;
         }
         .product {
-            background-color: #fff;
+            background-color: #f0f0f0;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -52,7 +52,7 @@
         .search input[type="text"] {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #f7f7f7;
             border-radius: 3px;
         }
     </style>
@@ -104,12 +104,17 @@
     
     
     <div class="container">
-        <h1>Tienda de Productos de Informática</h1>
-        <div class="welcome">
-            <p>Bienvenido Usuario</p>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Buscar productos">
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <title>Barra de Búsqueda</title>
+        </head>
+        <body>
+            <h1>Barra de Búsqueda</h1>
+            <form action="/buscar" method="GET">
+                <input type="text" name="q" placeholder="Buscar Producto...">
+                <button type="submit">Buscar</button>
+            </form>
+        </body>
         </div>
         <ul class="categories">
             <li>Perifericos
