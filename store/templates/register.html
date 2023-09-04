@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registrarse</title>
+    <title> KSG - Registrarse</title>
     <style>
         /* Estilos para la apariencia del formulario */
         body {
+            background-image: url('image/fondo2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
             display: flex;
@@ -14,10 +18,13 @@
             margin: 0;
         }
         .container {
+            padding: 20px;
+            background-color: rgba(31, 30, 30, 0.404); /* Fondo semi-transparente para el contenido */
+            border-radius: 10px;
             max-width: 400px;
             padding: 30px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            background-color: #f3f3f35d;
+            border: 1px solid #fd55554f;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,.1);
         }
@@ -50,14 +57,14 @@
 <body>
     <div class="container">
         <h1>Registrarse</h1>
-        <form href="/login" > <!-- Archivo PHP para procesar el registro -->
+        <form action="login.html" > <!-- Archivo PHP para procesar el registro -->
             <input type="text" name="nombre" placeholder="Nombre completo">
             <input type="text" name="usuario" placeholder="Nombre de usuario">
             <input type="password" name="contraseña" placeholder="Contraseña">
             <input type="submit" value="Registrarse">
         </form>
         <div class="login">
-            <a href="/login">Iniciar sesión</a> <!-- Enlace para iniciar sesión -->
+            <a href="login.html">Iniciar sesión</a> <!-- Enlace para iniciar sesión -->
         </div>
     </div>
 </body>

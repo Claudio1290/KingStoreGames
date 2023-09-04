@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Iniciar Sesion</title>
+    <title>KSG - Iniciar Sesion</title>
+    <link rel="stylesheet" href="style">
     <style>
         /* Estilos para la apariencia del formulario */
-        body {
+        body 
+        
+        {
+            background-image: url('image/fondo1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
             display: flex;
@@ -14,10 +21,13 @@
             margin: 0;
         }
         .container {
+            padding: 20px;
+            background-color: rgba(31, 30, 30, 0.404); /* Fondo semi-transparente para el contenido */
+            border-radius: 10px;
             max-width: 400px;
             padding: 30px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            background-color: #fdfdfd7e;
+            border: 1px solid #85010138;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,.1);
         }
@@ -50,13 +60,24 @@
 <body>
     <div class="container">
         <h1>Iniciar Sesion</h1>
-        <form action="index.html" method="post"> <!-- Archivo PHP para validar el inicio de sesión -->
-            <input type="text" name="usuario" placeholder="Nombre de usuario">
-            <input type="password" name="contrasena" placeholder="Contrasena">
-            <input type="submit" value="Iniciar Sesion">
+        <form id="loginForm">
+        <form action="index.html" method="post" > <!-- Archivo PHP para validar el inicio de sesión -->
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Nombre de usuario">
+                <input type="password" name="password" placeholder="Contrasena">
+                <input type="submit" value="Iniciar Sesion">
         </form>
+        </form>
+            <script>
+                document.getElementById("loginForm").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var username = document.getElementById("username").value;
+                    localStorage.setItem("username", username);
+                    window.location.href = "index.html";
+            });  
+         </script>
         <div class="create-account">
-            <a href="/register">Crear una cuenta nueva</a> <!-- Enlace para crear una nueva cuenta -->
+            <a href="register.html">Crear una cuenta nueva</a> <!-- Enlace para crear una nueva cuenta -->
         </div>
     </div>
 </body>

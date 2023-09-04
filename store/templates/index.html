@@ -5,10 +5,32 @@
     <style>
         /* Estilos generales para la apariencia de la página */
         body {
+            background-image: url('image/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
         }
+        .container {
+            padding: 20px;
+            background-color: rgba(31, 30, 30, 0.404); /* Fondo semi-transparente para el contenido */
+            border-radius: 10px;
+        }
+       
+
+        h1 {
+                font-size: 36px; /* Tamaño de fuente personalizable */
+            color: #fff; /* Color del texto */
+            text-shadow: 
+            -2px -2px 0 #860505, /* Sombra superior-izquierda (color rojo) */
+            2px -2px 0 #860202,  /* Sombra superior-derecha (color rojo) */
+            -2px 2px 0 #960000,  /* Sombra inferior-izquierda (color rojo) */
+            2px 2px 0 #860000;   /* Sombra inferior-derecha (color rojo) */
+        }
+        .welcome
+        {
+            color: #ccc;
+        }
+            
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -16,6 +38,8 @@
         }
         h1 {
             text-align: center;
+            text-decoration-color: #ddd;
+
         }
         .welcome {
             text-align: right;
@@ -23,7 +47,7 @@
         .categories {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .category {
             margin: 0 10px;
@@ -32,12 +56,12 @@
         .products {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
+            grid-gap: 10px;
         }
         .product {
-            background-color: #fff;
+            background-color: #111111c5;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid #0f0f0f94;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,.1);
             margin-top: 10px;
@@ -96,60 +120,251 @@
      .submenu li:last-child {
      border-bottom: none;
      }
+     body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* Estilo básico para la barra de navegación */
+.navbar {
+    background-color: #4b1e1e;
+    color: #fff;
+    padding: 10px 0;
+}
 
+/* Estilo para el contenedor dentro de la barra de navegación */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el logotipo de la barra de navegación */
+.navbar-brand {
+    background-image: url(KingStoreGames\Image\KSG.png)
+   
+}
+
+/* Estilo para la lista de elementos de navegación */
+.navbar-nav {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo para los elementos de la lista de navegación */
+.navbar-nav li {
+    margin-right: 20px;
+}
+
+/* Estilo para los enlaces de navegación */
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Cambiar color del enlace al pasar el mouse */
+.navbar-nav li a:hover {
+    color: #FFD700;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Estilo para el contenedor dentro de la barra de navegación */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el logotipo de la barra de navegación */
+.navbar-logo img {
+    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+/* Estilo para el menú de navegación */
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo para los elementos del menú de navegación */
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+/* Estilo para los enlaces del menú de navegación */
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Cambiar color del enlace al pasar el mouse en el menú */
+.navbar-menu li a:hover {
+    color: #FFD700;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+/* Estilo para el enlace que activa el menú desplegable */
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 100%;
+}
+
+/* Estilo para los elementos de la lista dentro del menú desplegable */
+.dropdown-menu li {
+    margin: 0;
+    text-align: left;
+}
+
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+
+/* Cambiar color del enlace al pasar el mouse en el menú desplegable */
+.dropdown-menu li a:hover {
+    background-color: #444;
+}
+
+/* Estilo para la barra de búsqueda */
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el campo de búsqueda */
+.navbar-search input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Estilo para el botón de búsqueda */
+.navbar-search button {
+    padding: 8px 20px;
+    background-color: #9e0f0f;
+    border: none;
+    border-radius: 5px;
+    color: #e2dfdf;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambiar color del botón al pasar el mouse */
+.navbar-search button:hover {
+    background-color: #9c2712;
+}
+
+ 
      </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-logo">
+                    <a href="index.html"><img src="Image/KSG.png" alt="Logo de la Tienda Gamer"></a>
+                </div>
+                <ul class="navbar-menu">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="teclados.html">Teclados</a></li>
+                            <li><a href="ratones.html">Ratones</a></li>
+                            <li><a href="auriculares.html">Auriculares</a></li>
+                            <li><a href="tarjetas-graficas.html">Tarjetas Gráficas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="navbar-search">
+                    <input type="text" placeholder="Buscar productos...">
+                    <button type="submit">Buscar</button>
+                </div>
+            </div>
+        </nav>
 
 <body>
     
     
+
+
+
+
     <div class="container">
         <h1>Tienda de Productos de Informática</h1>
         <div class="welcome">
-            <p>Bienvenido Usuario</p>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Buscar productos">
-        </div>
-        <ul class="categories">
-            <li>Perifericos
-              <ul class="submenu">
-                <li>Mouse</li>
-                <li>Teclado</li>
-                <li>Auriculares</li>
-              </ul>
-            </li>
-            <li>Componentes PC
-                <ul class="submenu">
-                  <li>Procesadores</li>
-                  <li>Placas de video</li>
-                  <li>Placas madre</li>
-                </ul>
-              </li>
-            <li>Electrodomesticos 
-                <ul class="submenu">
-                 <li>Lavarropa</li>
-                 <li>Heladera</li>
-                 <li>Microondas</li>
-                </ul>
-            </li>
-          </ul>
-          
+            <div id="welcomeMessage"></div>
+            <script>
+                var username = localStorage.getItem("username");
+                if (username) {
+                    document.getElementById("welcomeMessage").textContent = "Bienvenido: " + username;
+                } else {
+                    // El usuario no ha iniciado sesión, puedes manejarlo como desees.
+                    document.getElementById("welcomeMessage").textContent = "Bienvenido Invitado";
+                }
+            </script>
         <div class="products">
             <div class="product">
-                <img src="producto1.jpg" alt="Producto 1">
+                <img src="monitor.jpg" alt="Producto 1">
                 <h3>Producto 1</h3>
                 <p>Descripción del producto 1</p>
                 <p>Precio: $100</p>
             </div>
             <div class="product">
-                <img src="producto2.jpg" alt="Producto 2">
+                <img src="mother.jpg" alt="Producto 2">
                 <h3>Producto 2</h3>
                 <p>Descripción del producto 2</p>
                 <p>Precio: $200</p>
             </div>
             <div class="product">
-                <img src="producto3.jpg" alt="Producto 3">
+                <img src="teclado.jpg" alt="Producto 3">
                 <h3>Producto 3</h3>
                 <p>Descripción del producto 3</p>
                 <p>Precio: $300</p>
