@@ -307,7 +307,8 @@ body {
         <nav class="navbar">
             <div class="container">
                 <div class="navbar-logo">
-                    <a href="index.html"><img src="Image/KSG.png" alt="Logo de la Tienda Gamer"></a>
+                    {% load static %}
+                    <a href="index.html"><img src="{% static 'image/ksg.png' %}" alt="My image">
                 </div>
                 <ul class="navbar-menu">
                     <li><a href="inicio.html">Inicio</a></li>
